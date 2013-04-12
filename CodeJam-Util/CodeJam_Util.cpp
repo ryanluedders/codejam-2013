@@ -114,4 +114,19 @@ namespace CJUtil
         
         return (int)std::string( stringStrm.str() ).size();
     } // end of calculatePlaces
+
+    /*-----------------------------------------------*
+     * showArguments
+     *-----------------------------------------------*/
+    void showArguments
+    	(
+    	int argc,
+    	const char * argv[]
+    	)
+    {
+        for(int i=0; i<argc; i++)
+        {
+        	std::cout << argv[i] << std::endl;
+        }
+    } // end of showArguments
 }

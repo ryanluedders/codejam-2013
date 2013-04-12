@@ -38,6 +38,12 @@ namespace CJUtil
         (
          int aNumber
          );
+
+    void showArguments
+    	(
+    	int argc,
+    	const char * argv[]
+    	);
 }
 
 #endif //_CODEJAM_UTIL_H
