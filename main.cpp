@@ -13,18 +13,16 @@
 #include "CodeJam-1-3.h"
 #include "CodeJam-1-4.h"
 
-#define CURRENT_ROUND 11
-
 // main
 int main(int argc, const char * argv[])
 {
-#if( 11 == CURRENT_ROUND )
+#if defined( ROUND_1_1 )
 		return CJ11::solve(argc, argv);
-#elif( 12 == CURRENT_ROUND )
+#elif defined( ROUND_1_2 )
 		return CJ12::solve(argc, argv);
-#elif( 13 == CURRENT_ROUND )
+#elif defined( ROUND_1_3 )
 		return CJ13::solve(argc, argv);
-#elif( 14 == CURRENT_ROUND )
+#elif defined( ROUND_1_4 )
 		return CJ14::solve(argc, argv);
 #endif
 } // end of main
