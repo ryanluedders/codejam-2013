@@ -1,6 +1,5 @@
 //
-//  CodeJam-1-3.cpp
-//  CodeJam-1-3
+//  CodeJam-1-1.cpp
 //
 //  Created by Ryan Luedders on 4/13/12.
 //  Copyright 2012 n/a. All rights reserved.
@@ -12,17 +11,17 @@
 #include <sstream>
 #include <stdlib.h>
 #include "CodeJam_Util.h"
-#include "CodeJam-1-3.h"
+#include "CodeJam-1-1.h"
 
 #define MAX_INTEGER_LENGTH 50
 
-namespace CJ13
+namespace CJ11
 {   
     bool runSolution
-        (
-         int argc, 
-         const char * argv[]
-         )
+		(
+        int argc,
+        const char * argv[]
+        )
     {
         bool result = false;
         
@@ -33,11 +32,11 @@ namespace CJ13
             
             // start at line 1, to ignore the first line which is just the
             // number of lines to follow
-            for( int i = 1; i < codeLines.size(); i++ )
+            for( unsigned int i = 1; i < codeLines.size(); i++ )
             {
                 if( codeLines[i].size() > 0 )
                 {
-                    resultLines.push_back( CJ13::solveProblem( i, codeLines[i] ) );
+                    resultLines.push_back( CJ11::solveProblem( i, codeLines[i] ) );
                 }
             }
             
@@ -48,11 +47,10 @@ namespace CJ13
     
     std::string solveProblem
         (
-         int lineNumber,
-         std::string aInput
+        int lineNumber,
+        std::string aInput
         )
     {
-        
         std::string returnString;
         std::string boundString;
         
@@ -86,7 +84,7 @@ namespace CJ13
             
             std::vector<std::string> pairsForI;
             
-            for( int j = 0; j < iStr.size(); j++ )
+            for( unsigned int j = 0; j < iStr.size(); j++ )
             {
                 if( std::atoi( iStr.c_str() ) >= lowerBound
                    && std::atoi( iStr.c_str() ) <= upperBound

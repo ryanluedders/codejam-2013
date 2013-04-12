@@ -64,7 +64,7 @@ namespace CJUtil
     
         if( outputFile.is_open() )
         {
-            for( int i = 0; i < fileLines.size(); i++ )
+            for( unsigned int i = 0; i < fileLines.size(); i++ )
             {
                 outputFile << fileLines[i] << std::endl;
                 #if( OUTPUT_TO_STDOUT )
