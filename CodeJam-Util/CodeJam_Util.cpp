@@ -23,9 +23,9 @@ namespace CJUtil
      * \return a vector of lines
      *-----------------------------------------------*/
     std::vector<std::string> readFile
-    (
-     const char * fileName
-     )
+    	(
+    	const char * fileName
+    	)
     {
         std::vector<std::string> returnVector;
         
@@ -52,10 +52,10 @@ namespace CJUtil
      * \return whether write was successful
      *-----------------------------------------------*/
     bool writeFile
-    (
-     const char * fileName,
-     std::vector<std::string> fileLines
-     )
+    	(
+    	const char * fileName,
+    	std::vector<std::string> fileLines
+    	)
     {
         bool result = false;
         std::ofstream outputFile;
@@ -82,10 +82,10 @@ namespace CJUtil
      * parse a line into arguments
      *-----------------------------------------------*/
     std::vector<std::string> parseLine
-    (
-     std::string line,
-     char delimiter
-     )
+    	(
+    	std::string line,
+    	char delimiter
+    	)
     {
         std::stringstream stringStrm( line );
         std::string token;
@@ -105,9 +105,9 @@ namespace CJUtil
      * \return number of places
      *-----------------------------------------------*/
     int calculatePlaces
-    (
-     int aNumber
-     )
+    	(
+    	int aNumber
+    	)
     {
         std::stringstream stringStrm;
         stringStrm << aNumber;

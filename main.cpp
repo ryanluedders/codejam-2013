@@ -9,8 +9,9 @@
 #include <iostream>
 #include "CodeJam-1-1.h"
 
+// main
 int main(int argc, const char * argv[])
 {
-    return CJ11::runSolution(argc, argv);
-}
+    return CJ11::solve(argc, argv);
+} // end of main
 

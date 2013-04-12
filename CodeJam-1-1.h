@@ -14,16 +14,10 @@
 
 namespace CJ11
 {
-	bool runSolution
+	bool solve
 		(
 		int argc,
 		const char * argv[]
-		);
-
-	std::string solveProblem
-		(
-		int lineNumber,
-		std::string aInput
 		);
 }
 
