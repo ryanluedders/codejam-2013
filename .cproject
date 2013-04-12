@@ -195,7 +195,7 @@
 								<option id="gnu.cpp.compiler.option.include.paths.1965641616" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CodeJam-Util}&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.preprocessor.def.1129555165" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1129555165" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ROUND_1_2"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1219850613" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -249,7 +249,7 @@
 								<option id="gnu.cpp.compiler.option.include.paths.1562028526" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CodeJam-Util}&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.preprocessor.def.1980164413" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1980164413" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ROUND_1_3"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1444427976" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -303,7 +303,7 @@
 								<option id="gnu.cpp.compiler.option.include.paths.708267958" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CodeJam-Util}&quot;"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.preprocessor.def.569073986" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+								<option id="gnu.cpp.compiler.option.preprocessor.def.569073986" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="ROUND_1_4"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.161784839" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -328,16 +328,23 @@
 		<configuration configurationName="Release">
 			<resource resourceType="PROJECT" workspacePath="/CodeJam-2013"/>
 		</configuration>
+		<configuration configurationName="1-4"/>
 		<configuration configurationName="Debug">
 			<resource resourceType="PROJECT" workspacePath="/CodeJam-2013"/>
 		</configuration>
 		<configuration configurationName="1-1">
 			<resource resourceType="PROJECT" workspacePath="/CodeJam-2013"/>
 		</configuration>
+		<configuration configurationName="1-3"/>
+		<configuration configurationName="1-2"/>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.macosx.exe.debug.845807971;cdt.managedbuild.config.gnu.macosx.exe.debug.845807971.;cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.debug.595763385;cdt.managedbuild.tool.gnu.c.compiler.input.269711478">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.macosx.exe.release.1087486217.884264910;cdt.managedbuild.config.macosx.exe.release.1087486217.884264910.;cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.release.1361434211;cdt.managedbuild.tool.gnu.c.compiler.input.1142298637">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.macosx.exe.release.1087486217;cdt.managedbuild.config.macosx.exe.release.1087486217.;cdt.managedbuild.tool.gnu.c.compiler.macosx.exe.release.1143352507;cdt.managedbuild.tool.gnu.c.compiler.input.47741700">
@@ -352,9 +359,11 @@
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.macosx.exe.release.1087486217.1417017196;cdt.managedbuild.config.macosx.exe.release.1087486217.1417017196.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.release.924094448;cdt.managedbuild.tool.gnu.cpp.compiler.input.1753152711">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.macosx.exe.release.1087486217.884264910;cdt.managedbuild.config.macosx.exe.release.1087486217.884264910.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.release.1426024860;cdt.managedbuild.tool.gnu.cpp.compiler.input.161784839">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.macosx.exe.release.1087486217;cdt.managedbuild.config.macosx.exe.release.1087486217.;cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.release.1025932861;cdt.managedbuild.tool.gnu.cpp.compiler.input.1502850108">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
