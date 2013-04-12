@@ -13,6 +13,8 @@
 #include "CodeJam-1-3.h"
 #include "CodeJam-1-4.h"
 
+#define ROUND_1_1
+
 // main
 int main(int argc, const char * argv[])
 {
