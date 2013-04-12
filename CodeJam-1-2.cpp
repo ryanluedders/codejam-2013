@@ -1,5 +1,5 @@
 //
-//  CodeJam-1-1.cpp
+//  CodeJam-1-2.cpp
 //
 //  Created by Ryan Luedders on 4/13/12.
 //  Copyright 2012 n/a. All rights reserved.
@@ -11,11 +11,11 @@
 #include <sstream>
 #include <stdlib.h>
 #include "CodeJam_Util.h"
-#include "CodeJam-1-1.h"
+#include "CodeJam-1-2.h"
 
-#define HEADER "***CodeJam 2013 Round 1-1***"
+#define HEADER "***CodeJam 2013 Round 1-2***"
 
-namespace CJ11
+namespace CJ12
 {   
     bool solve
 		(
