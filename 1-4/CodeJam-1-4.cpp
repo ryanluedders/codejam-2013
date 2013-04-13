@@ -68,6 +68,7 @@ namespace CJ14
 		cur_line++;
 
 		std::cout << "processing " << count << " samples" << std::endl;
+		std::vector<std::string> lines;
 
 		for(int i=0; i<count; i++)
 		{
@@ -87,13 +88,13 @@ namespace CJ14
 			cur_line += 1;
 
 			std::vector<int> keys_held;
-			std::cout << "keys held: ";
+			//std::cout << "keys held: ";
 			for(int j=0; j<start_count; j++)
 			{
 				keys_held.push_back(std::atoi(keys_held_str[j].c_str()));
-				std::cout << keys_held[j] << " ";
+				//std::cout << keys_held[j] << " ";
 			}
-			std::cout << std::endl;
+			//std::cout << std::endl;
 
 			std::vector<Chest> chests;
 			for(int j=0; j<chest_count; j++)
@@ -105,9 +106,12 @@ namespace CJ14
 				a.setNumber(j+1);
 				a.setRequiredKey(std::atoi(chest_contents[0].c_str()));
 				chest_contents.erase(chest_contents.begin());
+				//discard number of keys entry, as well
+				chest_contents.erase(chest_contents.begin());
+
 				a.insertKeys(chest_contents);
 				a.setLocked(true);
-				a.print();
+				//a.print();
 
 				chests.push_back(a);
 			}
@@ -149,10 +153,26 @@ namespace CJ14
 								}
 							}
 						}
+
 						if( needed_keys > max_count )
 						{
 							max_count = needed_keys;
 							chest_max_count = j;
+						}
+					}
+				}
+
+				// if there is no concern about number of keys, open the lowest N chest
+				if( keys_held.size() > 1 )
+				{
+					for(int j=chests.size()-1; j>=0; j--)
+					{
+						//std::cout << j << std::endl;
+						if( inVector(keys_held,chests[j].getRequiredKey()) &&
+								chests[j].getLocked())
+						{
+							chest_max_count = j;
+							//break;
 						}
 					}
 				}
@@ -171,20 +191,40 @@ namespace CJ14
 				}
 			}
 
-			std::cout << "-------" << std::endl;
+			std::stringstream strm;
+			strm << (i+1);
+
+			std::string line = "";
+			line.append("Case #");
+			line.append(strm.str());
+			line.append(": ");
+
+
+			//std::cout << "Case #" << i+1 << ": ";
 			if( order.size() != chests.size() )
 			{
-				std::cout << "IMPOSSIBLE" << std::endl;
+				//std::cout << "IMPOSSIBLE" << std::endl;
+				line.append("IMPOSSIBLE");
 			}
 			else
 			{
-				for(int i=0; i<order.size(); i++)
+				for(int j=0; j<order.size(); j++)
 				{
-					std::cout << order[i] << " ";
+					//std::cout << order[i] << " ";
+					strm.str("");
+					strm << order[j];
+					line.append(strm.str());
+					if( j != order.size()-1 )
+					{
+						line.append(" ");
+					}
 				}
 			}
-			std::cout << std::endl << "--------" << std::endl;
+
+			lines.push_back(line);
 		}
+
+		CJUtil::writeFile(argv[2],lines);
 
         return result;
     } // end of solve
