@@ -13,7 +13,7 @@
 #include "CodeJam-1-3.h"
 #include "CodeJam-1-4.h"
 
-#define ROUND_1_2
+#define ROUND_1_3
 
 // main
 int main(int argc, const char * argv[])
