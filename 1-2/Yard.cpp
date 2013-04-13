@@ -52,7 +52,17 @@ int Yard::result()
 	{
 		for(int j=0; j<width; j++)
 		{
-
+			bool rowOk = true;
+			bool colOk = true;
+			for(int n=0; n<width; n++)
+			{
+				rowOk &= (grid[i][j] >= grid[i][n]);
+			}
+			for(int n=0; n<height; n++)
+			{
+				colOk &= (grid[i][j] >= grid[n][j]);
+			}
+			ok &= (rowOk || colOk);
 		}
 	}
 
