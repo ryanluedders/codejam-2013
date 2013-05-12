@@ -137,7 +137,7 @@ namespace CJ14
 				int chest_max_count = -1;
 				for(std::vector<int>::iterator it = keys_held.begin(); it != keys_held.end(); it++)
 				{
-					for( int j=0; j<chest_count; j++)
+					for( int j=chest_count-1; j>=0; j--)
 					{
 						int needed_keys = -1;
 						if( chests[j].getLocked() &&
@@ -154,7 +154,7 @@ namespace CJ14
 							}
 						}
 
-						if( needed_keys > max_count )
+						if( needed_keys > 1 )
 						{
 							max_count = needed_keys;
 							chest_max_count = j;
