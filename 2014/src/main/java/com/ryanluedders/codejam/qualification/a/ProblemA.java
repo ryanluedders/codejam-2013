@@ -16,7 +16,7 @@ import com.thoughtworks.xstream.XStream;
  * Hello world!
  *
  */
-public class App
+public class ProblemA
 {
 	private static final String BAD_MAGICIAN =
 			"Bad magician!";
