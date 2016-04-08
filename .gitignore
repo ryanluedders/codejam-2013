@@ -3,3 +3,5 @@ Release
 .cproject.swp
 io
 .settings
+.classpath
+.project

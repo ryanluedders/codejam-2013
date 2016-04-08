@@ -1,4 +1,4 @@
-package com.ryanluedders.codejam.qualification.a;
+package com.ryanluedders.codejam.fourteen.qualification.a;
 
 import java.io.File;
 import java.io.IOException;
